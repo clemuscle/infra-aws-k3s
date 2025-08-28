@@ -40,14 +40,14 @@ resource "aws_security_group" "k3s" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = [var.my_ip_cidr]
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   ingress {
     from_port   = 30080
     to_port     = 30080
     protocol    = "tcp"
-    cidr_blocks = [var.my_ip_cidr]
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   egress {

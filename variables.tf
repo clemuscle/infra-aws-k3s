@@ -14,7 +14,6 @@ variable "public_key_path" {
 
 variable "my_ip_cidr" {
   type    = string
-  default = "203.0.113.10/32"
 }
 
 variable "instance_type" {
